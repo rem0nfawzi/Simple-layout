@@ -1,0 +1,41 @@
+#sidebar {
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    .info {
+        text-align: center;
+        h2 {
+            margin-top: 30px;
+        }
+    }
+    .links {
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 0;
+        padding-bottom: 200px;
+        li {
+            margin-bottom: 20px;
+            a {
+                font-size: 16px;
+                color: #656565;
+                display: flex;
+                align-items: center;
+                span {
+                    width: 30px;
+                    font-size: 25px;
+                    color: #cfcfcf;
+                    margin-right: 10px;
+                }
+            }
+            &.active {
+                a,
+                span {
+                    color: #43a39a;
+                }
+            }
+        }
+    }
+}
